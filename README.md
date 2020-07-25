@@ -62,8 +62,15 @@ La ejecución del script dará como resultado la imagen de la gráfica en un fic
 ##### Clases
 Por un lado se ha implementado la clase [`DataSource`](script/data_source.py) y sus variantes, hijas de ésta, `UrlDataSource` y `StdinDataSource`. `UrlDataSource` se usa para obtener los datos a partir de la url y `StdinDataSource`, a partir de los datos que se pasen en la ejecución del script, mediante el fichero local, por ejemplo.
 
+| ![Jerarquía de clases de las fuentes de datos](assets/images/datasource-class-hierarchy.png) | 
+|:--:| 
+| *Jerarquía de clases de las fuentes de datos* |
+
 Por otro lado, para pintar la gráfica, se ha implementado la clase [`Chart`](script/chart.py) y sus clases hijas, `LineChart`, `BarChart` y `PointChart`, las cuales se usan para los gráficos de tipo linea, barras y puntos respectivamente.
 
+| ![Jerarquía de clases de gráficas](assets/images/chart-class-hierarchy.png) | 
+|:--:| 
+| *Jerarquía de clases de gráficas* |
 
 #### Gráficos obtenidos
 Para los datos de la URL https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/04-06-2020.csv y los campos `Country_Region` para el eje de las `X` y `Active` para el eje de las `Y`:
@@ -101,6 +108,12 @@ Se ha implementado un componente servidor, con [NestJS](https://nestjs.com/), el
     | *Tabla de datos* |
 
 * Tras especificar los parámetros y darle al botón `Pintar gráfica`, se mostrará la imagen generada por el script en python.
+
+En la siguiente imagen se muestra la arquitectura de la aplicación y el flujo de la petición:
+
+| ![Arquitectura de aplicación](assets/images/architecture.png) | 
+|:--:| 
+| *Arquitectura de aplicación* |
 
 ## Mejoras planteadas para las siguientes prácticas
 * Incorporación de una librería JS para la renderización de las gráficas en la parte del cliente, por ejemplo [chartjs](https://www.chartjs.org/). Si bien, según la experiencia adquirida en está práctica, la librería `Matplotlib` es muy fácil de usar, me parece poco usable mostrar en el cliente sólo una imagen de la gráfica, con la cual el usuario no puede interactuar. Por lo que pienso que podría ser idóneo que el script en python sólo calcule los datos a representar, a partir de los argumentos recibidos, y que sea en el cliente donde se renderice los gráficos a partir de estos datos.

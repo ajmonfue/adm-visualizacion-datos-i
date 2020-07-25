@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
 
-class Chart:
+class ADMChart:
     def __init__(self, x_axis, y_axis, x_axis_name, y_axis_name):
         self.x_axis = x_axis
         self.y_axis = y_axis
@@ -34,16 +34,16 @@ class Chart:
         pass
 
 
-class LineChart(Chart):
+class LineChart(ADMChart):
     def set_type_chart(self, axes):
         axes.plot(self.x_axis, self.y_axis)
 
 
-class BarChart(Chart):
+class BarChart(ADMChart):
     def set_type_chart(self, axes):
         axes.bar(self.x_axis, self.y_axis)
 
 
-class PointChart(Chart):
+class PointChart(ADMChart):
     def set_type_chart(self, axes):
         axes.scatter(self.x_axis, self.y_axis)
