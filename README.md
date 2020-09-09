@@ -1,7 +1,7 @@
 # Visualización de Datos I
-**Repositorio del proyecto**: [https://github.com/DiDream/adm-visualizacion-datos-i](https://github.com/DiDream/adm-visualizacion-datos-i)
-
-**Puede acceder a la demo de la aplicación en [http://edu.ajmonfue.me/adm-1/](http://edu.ajmonfue.me/adm-1/)**
+## Notas
+* **Repositorio del proyecto**: [https://github.com/DiDream/adm-visualizacion-datos-i](https://github.com/DiDream/adm-visualizacion-datos-i)
+* **Puede acceder a la demo de la aplicación en [http://edu.ajmonfue.me/adm-1/](http://edu.ajmonfue.me/adm-1/)** 
 
 ## Enunciados
 #### 1. Lee el documento ["Why scientists need to be better at data visualizationURL"](https://www.knowablemagazine.org/article/mind/2019/science-data-visualization) hasta la sección "Ruinous rainbows", esta última sección no incluida. Haz un resumen de no más de una página con las conclusiones que obtienes.
